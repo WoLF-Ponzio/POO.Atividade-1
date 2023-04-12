@@ -29,4 +29,13 @@ public abstract class Pessoa{
         this.cpf = cpf;      
     }
 
+    @Override
+    public String toString() {
+        String aux = "";
+
+        aux += "Nome: " + getNome() + "\n";
+        aux += "CPF: " + getCpf() + "\n";
+        return aux;
+    }
+
 }
