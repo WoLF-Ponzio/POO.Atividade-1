@@ -1,12 +1,14 @@
 package src.Atividade_01;
+import java.util.UUID;
 
 public class Pessoa{
 
+    private String id;
     private String nome;
     private String cpf;
     
     public Pessoa(){
-        
+        id = UUID.randomUUID().toString();
     }
 
     public String getNome(){
@@ -19,6 +21,10 @@ public class Pessoa{
 
     public String getCpf(){
         return cpf;
+    }
+
+    public String getId(){
+        return id;
     }
 
     public void setCpf(String cpf){
@@ -38,6 +44,7 @@ public class Pessoa{
     public String toString() {
         String aux = "";
 
+        aux += "ID: " + getId() + "\n"; 
         aux += "Nome: " + getNome() + "\n";
         aux += "CPF: " + getCpf() + "\n";
         return aux;
