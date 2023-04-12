@@ -1,9 +1,13 @@
-package Atividade_01.src;
-public abstract class Pessoa{
+package src.Atividade_01;
+
+public class Pessoa{
 
     private String nome;
     private String cpf;
-
+    
+    public Pessoa(){
+        
+    }
 
     public String getNome(){
         return nome;
