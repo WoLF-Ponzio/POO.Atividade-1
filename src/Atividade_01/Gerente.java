@@ -12,9 +12,25 @@ public class Gerente extends Empregado implements calcularBonus {
 
     }
 
+    public double getBonus() {
+        return bonus;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
     @Override
     public double Bonus() {
-    return this.salario * bonus;
+        return this.getBonus() * this.getSalario();
 
     }
 

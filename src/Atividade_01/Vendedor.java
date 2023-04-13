@@ -11,8 +11,25 @@ public class Vendedor extends Empregado implements calcularSalario {
         this.comissao = comissao;
     }
 
+    public double getTotalDeVendas() {
+        return totalDeVendas;
+    }
+
+    public double getComissao() {
+        return comissao;
+    }
+
+    public void setTotalDeVendas(double totalDeVendas) {
+        this.totalDeVendas = totalDeVendas;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }
+
     @Override
     public double salario() {
-        return this.totalDeVendas * this.comissao;
+        return this.getTotalDeVendas() * this.getComissao();
     }
+
 }
