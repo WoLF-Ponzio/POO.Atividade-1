@@ -7,7 +7,7 @@ import static java.lang.Integer.*;
 
 public class Menu {
 
-    public ArrayList<Pessoa> listaPessoas = new ArrayList<>();
+    private ArrayList<Pessoa> listaPessoas = new ArrayList<>();
 
     public void menu() {
         cadastrarEmpregado cadastroEmp = new cadastrarEmpregado();
@@ -23,8 +23,14 @@ public class Menu {
 
                 switch (menu) {
                     case 1:
-
-                        cadastroEmp.CadastrarEmpregado();
+                        Pessoa pessoa = new Pessoa();
+                        pessoa = cadastroEmp.CadastrarEmpregado(getListaPessoas());  
+                        if(pessoa == null){
+                            
+                        }else{
+                            listaPessoas.add(pessoa);
+                            showConfirmDialog(null, "Empregado cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION, INFORMATION_MESSAGE);
+                        }
 
                         break;
                         
@@ -64,5 +70,9 @@ public class Menu {
             }
         } while (menu != 7);
 
+    }
+
+    public ArrayList<Pessoa> getListaPessoas() {
+        return listaPessoas;
     }
 }

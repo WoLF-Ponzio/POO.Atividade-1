@@ -1,22 +1,15 @@
 package src.Atividade_01;
-import static javax.swing.JOptionPane.*;
-
-import java.util.Scanner;
-
+import java.util.ArrayList;
 import src.Atividade_01.Classes.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa teste = new Pessoa();
-        Scanner teclado = new Scanner(System.in);
         Menu menu = new Menu();
 
-         menu.menu();
-
-        System.out.print("nome: ");
-        teste.setNome(teclado.nextLine());
-        System.out.print("cpf: ");
-        teste.setCpf(teclado.nextLine());
-        System.out.println(teste);
+        menu.menu();
+        ArrayList<Pessoa>ListaPessoa = menu.getListaPessoas();
+        for (Pessoa pessoa : ListaPessoa) {
+            System.out.println(pessoa);
+        }
     }
 }

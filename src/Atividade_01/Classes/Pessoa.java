@@ -55,4 +55,12 @@ public class Pessoa{
         return aux;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(getCpf().equalsIgnoreCase(this.getCpf())){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

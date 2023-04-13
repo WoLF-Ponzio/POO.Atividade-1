@@ -2,7 +2,7 @@ package src.Atividade_01.Classes;
 
 import src.Atividade_01.interfaces.calcularSalario;
 
-public class Vendedor extends Empregado implements calcularSalario {
+public class Vendedor extends Empregado implements calcularSalario{
     private double totalDeVendas;
     private double comissao;
 

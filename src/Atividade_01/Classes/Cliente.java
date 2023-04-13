@@ -17,5 +17,5 @@ public class Cliente extends Pessoa{
     public void setValorDaDivida(double valorDaDivida){
         this.valorDaDivida = valorDaDivida;
     }
-
+    
 }
