@@ -8,7 +8,7 @@ public class Pessoa{
     private String cpf;
     
     public Pessoa(){
-        id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
     }
 
     public Pessoa(String nome, String cpf){
