@@ -1,4 +1,5 @@
 package src.Atividade_01;
+
 import src.Atividade_01.metodosMenu.*;
 import static javax.swing.JOptionPane.*;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ public class Menu {
 
     public void menu() {
         cadastrarEmpregado cadastroEmp = new cadastrarEmpregado();
+        cadastrarCliente cadastroCli = new cadastrarCliente();
 
         int menu = 0;
 
@@ -23,44 +25,55 @@ public class Menu {
 
                 switch (menu) {
                     case 1:
-                        Pessoa pessoa = new Pessoa();
-                        pessoa = cadastroEmp.CadastrarEmpregado(getListaPessoas());  
-                        if(pessoa == null){
-                            
-                        }else{
-                            listaPessoas.add(pessoa);
-                            showConfirmDialog(null, "Empregado cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION, INFORMATION_MESSAGE);
+                        Pessoa PEmp = new Pessoa();
+                        PEmp = cadastroEmp.CadastrarEmpregado(getListaPessoas());
+                        if (PEmp == null) {
+
+                        } else {
+                            listaPessoas.add(PEmp);
+                            showConfirmDialog(null, "Empregado cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION,
+                                    INFORMATION_MESSAGE);
                         }
 
                         break;
-                        
+
                     case 2:
 
-                        //CadastrarCliente();
+                        Pessoa PCli = new Pessoa();
+
+                        PCli = cadastroCli.cadastro(listaPessoas);
+
+                        if (PCli == null) {
+
+                        } else {
+                            listaPessoas.add(PCli);
+                            showConfirmDialog(null, "Empregado cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION,
+                                    INFORMATION_MESSAGE);
+                        }
 
                         break;
 
                     case 3:
 
-                        //Pesquisar();
+                        // Pesquisar();
 
                         break;
 
                     case 4:
 
-                        //ListarEmpregado();
+                        // ListarEmpregado();
 
                         break;
-                        
+
                     case 5:
 
-                        //ListarCliente();
+                        // ListarCliente();
 
                         break;
 
                     case 6:
 
-                        //Remover();
+                        // Remover();
 
                         break;
                 }

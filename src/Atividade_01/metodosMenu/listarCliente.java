@@ -2,31 +2,18 @@ package src.Atividade_01.metodosMenu;
 
 import java.util.ArrayList;
 
-import org.omg.Messaging.SyncScopeHelper;
+import static javax.swing.JOptionPane.*;
+
+import src.Atividade_01.Classes.Pessoa;
 
 public class listarCliente {
-    
-    public void listagem(){
-        String mensagem = "";
 
+    public void listaCli(ArrayList<Pessoa> listaPessoas) {
 
-
-
-
-
-
-
-
-
-
-
-
-        
-
-        if(mensagem.equals("")){
+        if (mensagem.equals("")) {
             showConfirmDialog(null, "Clientes não encontrados");
 
-        }else {
+        } else {
             mensagem = "Cliente " + mensagem;
             System.out.println(mensagem);
         }
