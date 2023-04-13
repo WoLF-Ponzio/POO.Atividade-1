@@ -12,6 +12,9 @@ public class Vendedor extends Empregado implements calcularSalario{
         this.totalDeVendas = totalDeVendas;
         this.comissao = comissao;
     }
+    public Vendedor(){
+        super();
+    }
 
     public double getTotalDeVendas() {
         return totalDeVendas;
