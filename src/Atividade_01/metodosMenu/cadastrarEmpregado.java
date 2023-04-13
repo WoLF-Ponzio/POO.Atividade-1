@@ -42,7 +42,28 @@ public class cadastrarEmpregado {
 
             } else if (menu == 2) {
                 // cadastro do vendedor
-                return null;
+                Vendedor vendedor = new Vendedor();
+                vendedor.setNome(showInputDialog(getRootFrame(), "Digite o nome do vendedor", "Cadastro do Vendedor",DEFAULT_OPTION));
+                while (teste == true) {
+                    vendedor.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Vendedor", "Cadastro do Vendedor", DEFAULT_OPTION));
+                    teste = false;
+                    if(listaPessoas.isEmpty()){
+                        teste = false;
+                    }else{
+                        for (Pessoa pessoa : listaPessoas) {
+                            if (pessoa.getCpf().equals(vendedor.getCpf())) {
+                                showConfirmDialog(null, "CPF já cadastrado! Digite um CPF válido!", "Erro!", DEFAULT_OPTION, ERROR_MESSAGE);
+                                teste = true;
+                            } else {
+                                
+                            }
+                        }
+                    }
+                }
+                vendedor.setTotalDeVendas(parseDouble(showInputDialog(null, "Digite o Total de Vendas desse funcionário", "Cadastro do Vendedor", DEFAULT_OPTION)));
+                vendedor.setComissao(parseDouble(showInputDialog(null, "Digite a Comissão por venda", "Cadastro do Vendedor", DEFAULT_OPTION)));
+                System.out.println(vendedor);
+                return vendedor;
             } else {
                 showConfirmDialog(null, "Entrada de dado inválida! Repita o processo novamente", "Erro!", DEFAULT_OPTION, ERROR_MESSAGE);
                 return null;
