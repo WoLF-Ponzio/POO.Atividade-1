@@ -1,7 +1,5 @@
 package src.Atividade_01;
-
 import static javax.swing.JOptionPane.*;
-
 import static java.lang.Integer.*;
 
 public class Menu {
@@ -19,32 +17,37 @@ public class Menu {
                 switch (menu) {
                     case 1:
 
-                    CadastrarEmpregado();
+                        CadastrarEmpregado();
 
                         break;
+                        
                     case 2:
 
-                    CadastrarCliente();
+                        CadastrarCliente();
 
                         break;
+
                     case 3:
 
-                    Pesquisar();
+                        Pesquisar();
 
                         break;
+
                     case 4:
 
-                    ListarEmpregado();
+                        ListarEmpregado();
 
                         break;
+                        
                     case 5:
 
-                    ListarCliente();
+                        ListarCliente();
 
                         break;
+
                     case 6:
 
-                    Remover();
+                        Remover();
 
                         break;
                 }

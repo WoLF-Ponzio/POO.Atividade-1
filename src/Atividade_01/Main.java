@@ -3,6 +3,8 @@ import static javax.swing.JOptionPane.*;
 
 import java.util.Scanner;
 
+import src.Atividade_01.Classes.Pessoa;
+
 public class Main {
     public static void main(String[] args) {
         Pessoa teste = new Pessoa();
