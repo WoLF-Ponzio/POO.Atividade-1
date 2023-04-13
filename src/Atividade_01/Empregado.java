@@ -7,7 +7,7 @@ public class Empregado extends Pessoa{
     private String matricula;
     
     public Empregado(String id, String nome, String cpf){
-        //super(nome, cpf);
+        super(nome, cpf);
 
         do{
 
