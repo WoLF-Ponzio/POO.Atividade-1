@@ -13,6 +13,7 @@ public class Menu {
     public void menu() {
         cadastrarEmpregado cadastroEmp = new cadastrarEmpregado();
         cadastrarCliente cadastroCli = new cadastrarCliente();
+        listarCliente listaCli = new listarCliente();
 
         int menu = 0;
 
@@ -67,7 +68,7 @@ public class Menu {
 
                     case 5:
 
-                        // ListarCliente();
+                    listaCli.listaCli(listaPessoas);
 
                         break;
 
