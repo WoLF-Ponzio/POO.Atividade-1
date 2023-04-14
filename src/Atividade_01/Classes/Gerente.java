@@ -2,7 +2,7 @@ package src.Atividade_01.Classes;
 
 import src.Atividade_01.interfaces.calcularBonus;
 
-public class Gerente extends Empregado implements calcularBonus {
+public class Gerente  extends Empregado implements calcularBonus {
     private double bonus;
     private double salario;
     
