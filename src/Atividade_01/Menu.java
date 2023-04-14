@@ -13,9 +13,10 @@ public class Menu {
     public void menu() {
         cadastrarEmpregado cadastroEmp = new cadastrarEmpregado();
         cadastrarCliente cadastroCli = new cadastrarCliente();
-        listarCliente listaCli = new listarCliente();
         pesquisar Pesquisar = new pesquisar();
-
+        listarCliente listaCli = new listarCliente();
+        listarEmpregado listaEmp = new listarEmpregado();~
+        remover Remover = new remover();
         int menu = 0;
 
         do {
@@ -63,7 +64,7 @@ public class Menu {
 
                     case 4:
 
-                        // ListarEmpregado();
+                        listaEmp.listaEmp(listaPessoas);
 
                         break;
 
@@ -75,7 +76,7 @@ public class Menu {
 
                     case 6:
 
-                        // Remover();
+                    Remover.removerP(listaPessoas);
 
                         break;
                 }
