@@ -20,7 +20,7 @@ public class cadastrarEmpregado {
                 Gerente gerente = new Gerente();
                 gerente.setNome(showInputDialog(getRootFrame(), "Digite o nome do Gerente", "Cadastro do Gerente",DEFAULT_OPTION));
                 while (teste == true) {
-                    gerente.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Gerente", "Cadastro do Gerente", DEFAULT_OPTION));
+                    gerente.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Gerente (11 dígitos)", "Cadastro do Gerente", DEFAULT_OPTION));
                     teste = false;
                     if(listaPessoas.isEmpty()){
                         teste = false;
@@ -45,7 +45,7 @@ public class cadastrarEmpregado {
                 Vendedor vendedor = new Vendedor();
                 vendedor.setNome(showInputDialog(getRootFrame(), "Digite o nome do vendedor", "Cadastro do Vendedor",DEFAULT_OPTION));
                 while (teste == true) {
-                    vendedor.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Vendedor", "Cadastro do Vendedor", DEFAULT_OPTION));
+                    vendedor.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Vendedor (11 dígitos)", "Cadastro do Vendedor", DEFAULT_OPTION));
                     teste = false;
                     if(listaPessoas.isEmpty()){
                         teste = false;

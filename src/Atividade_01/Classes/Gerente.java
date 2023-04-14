@@ -35,7 +35,7 @@ public class Gerente  extends Empregado implements calcularBonus {
 
     @Override
     public double Bonus() {
-        return this.getBonus() * this.getSalario();
+        return (this.getBonus() / 100) * this.getSalario();
 
     }
 
@@ -45,8 +45,9 @@ public class Gerente  extends Empregado implements calcularBonus {
         aux += "Registro do funcionário: " + getMatricula() + "\n";
         aux += "Nome: " + getNome() + "\n";
         aux += "CPF: " + getCpf() + "\n";
-        aux += "Salário: " + getSalario() + "\n";
-        aux += "Bonûs: " + String.format("%.2f", Bonus()) + "\n";
+        aux += "Cargo: Gerente " +  "\n";
+        aux += "Salário: R$ " + getSalario() + "\n";
+        aux += "Bonûs: R$ " + String.format("%.2f", Bonus()) + ", a porcentagem de bonus é: " + getBonus() "%\n";
         return aux;
     }
 }

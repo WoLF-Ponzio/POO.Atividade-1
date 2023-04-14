@@ -17,7 +17,7 @@ public class cadastrarCliente {
             cliente.setNome(showInputDialog(getRootFrame(), "Digite o nome do Cliente", "Cadastro do Cliente",
                     DEFAULT_OPTION));
             while (teste == true) {
-                cliente.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Cliente", "Cadastro do Cliente",
+                cliente.setCpf(showInputDialog(getRootFrame(), "Digite o CPF do Cliente (11 dígitos)", "Cadastro do Cliente",
                         DEFAULT_OPTION));
                 teste = false;
                 if (listaPessoas.isEmpty()) {

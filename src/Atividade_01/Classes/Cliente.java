@@ -22,5 +22,14 @@ public class Cliente extends Pessoa {
     public void setValorDaDivida(double valorDaDivida) {
         this.valorDaDivida = valorDaDivida;
     }
+   
+    @Override
+    public String toString() {
+        String aux = ""; 
+        aux += "Nome do cliente: " + getNome() + "\n" ;
+        aux += "CPF do cliente: " + getCpf() + "\n" ;
+        aux += "Valor atual da dívida: R$ " + getValorDaDivida() + "\n" ;
+        return aux ;
 
+    }
 }
