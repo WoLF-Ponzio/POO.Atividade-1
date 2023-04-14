@@ -9,14 +9,14 @@ import static java.lang.Double.parseDouble;
 public class cadastrarEmpregado {
 
     public Pessoa CadastrarEmpregado(ArrayList<Pessoa> listaPessoas) {
-        // Pega o arraylist para verificar se já existe algum funcionário com o mesmo
-        // CPF já cadastrado
         int menu;
         boolean teste = true;
 
         try {
             menu = parseInt(showInputDialog(null, "1 - Gerente\n2 - Vendedor", "Digite qual o tipo de funcionário",DEFAULT_OPTION));
             if (menu == 1) {
+                
+                //cadastro Gerente
                 Gerente gerente = new Gerente();
                 gerente.setNome(showInputDialog(getRootFrame(), "Digite o nome do Gerente", "Cadastro do Gerente",DEFAULT_OPTION));
                 while (teste == true) {
@@ -35,12 +35,12 @@ public class cadastrarEmpregado {
                         }
                     }
                 }
-                gerente.setBonus(parseDouble(showInputDialog(null, "Digite o Bonûs salarial", "Cadastro do Gerente", DEFAULT_OPTION)));
+                gerente.setBonus(parseDouble(showInputDialog(null, "Digite o Bonûs salarial (calor inteiro)", "Cadastro do Gerente", DEFAULT_OPTION)));
                 gerente.setSalario(parseDouble(showInputDialog(null, "Digite o Salário", "Cadastro do Gerente", DEFAULT_OPTION)));
-                System.out.println(gerente);
                 return gerente;
 
             } else if (menu == 2) {
+
                 // cadastro do vendedor
                 Vendedor vendedor = new Vendedor();
                 vendedor.setNome(showInputDialog(getRootFrame(), "Digite o nome do vendedor", "Cadastro do Vendedor",DEFAULT_OPTION));
@@ -61,8 +61,7 @@ public class cadastrarEmpregado {
                     }
                 }
                 vendedor.setTotalDeVendas(parseDouble(showInputDialog(null, "Digite o Total de Vendas desse funcionário", "Cadastro do Vendedor", DEFAULT_OPTION)));
-                vendedor.setComissao(parseDouble(showInputDialog(null, "Digite a Comissão por venda", "Cadastro do Vendedor", DEFAULT_OPTION)));
-                System.out.println(vendedor);
+                vendedor.setComissao(parseDouble(showInputDialog(null, "Digite a Comissão por venda (valor inteiro)", "Cadastro do Vendedor", DEFAULT_OPTION)));
                 return vendedor;
             } else {
                 showConfirmDialog(null, "Entrada de dado inválida! Repita o processo novamente", "Erro!", DEFAULT_OPTION, ERROR_MESSAGE);

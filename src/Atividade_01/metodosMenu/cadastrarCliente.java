@@ -37,7 +37,6 @@ public class cadastrarCliente {
             cliente.setValorDaDivida(
                     parseDouble(showInputDialog(null, "Digite o valor da divida atual do cliente",
                             "Cadastro do Cliente", DEFAULT_OPTION)));
-            System.out.println(cliente);
             return cliente;
 
         } catch (Exception e) {

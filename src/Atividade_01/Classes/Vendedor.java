@@ -46,7 +46,7 @@ public class Vendedor extends Empregado implements calcularSalario{
         aux += "Cargo: Vendedor " +  "\n";
         aux += "Total de Vendas do funcionário: " + getTotalDeVendas() + "\n";
         aux += "Comissão po Venda: " + String.format("%.2f", getComissao()) + "%\n";
-        aux += "Salário: R$ " + String.format("%.2f", salario()) + "%\n";
+        aux += "Salário: R$ " + String.format("%.2f", salario()) + "\n";
         return aux;
     }
 

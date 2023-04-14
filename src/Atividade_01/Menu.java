@@ -50,7 +50,7 @@ public class Menu {
 
                         } else {
                             listaPessoas.add(PCli);
-                            showConfirmDialog(null, "Empregado cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION,
+                            showConfirmDialog(null, "Cliente cadastrado com sucesso!", "CADASTRO", DEFAULT_OPTION,
                                     INFORMATION_MESSAGE);
                         }
 
@@ -77,7 +77,7 @@ public class Menu {
                     case 6:
 
                     Remover.removerP(listaPessoas);
-
+                        
                         break;
                 }
 
@@ -91,4 +91,5 @@ public class Menu {
     public ArrayList<Pessoa> getListaPessoas() {
         return listaPessoas;
     }
+
 }
