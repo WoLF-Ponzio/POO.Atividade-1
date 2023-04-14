@@ -47,7 +47,7 @@ public class Gerente  extends Empregado implements calcularBonus {
         aux += "CPF: " + getCpf() + "\n";
         aux += "Cargo: Gerente " +  "\n";
         aux += "Salário: R$ " + getSalario() + "\n";
-        aux += "Bonûs: R$ " + String.format("%.2f", Bonus()) + ", a porcentagem de bonus é: " + getBonus() "%\n";
+        aux += "Bonûs: R$ " + String.format("%.2f", Bonus()) + ", a porcentagem de bonus é: " + getBonus() + "%\n";
         return aux;
     }
 }

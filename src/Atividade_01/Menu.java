@@ -15,7 +15,7 @@ public class Menu {
         cadastrarCliente cadastroCli = new cadastrarCliente();
         pesquisar Pesquisar = new pesquisar();
         listarCliente listaCli = new listarCliente();
-        listarEmpregado listaEmp = new listarEmpregado();~
+        listarEmpregado listaEmp = new listarEmpregado();
         remover Remover = new remover();
         int menu = 0;
 
