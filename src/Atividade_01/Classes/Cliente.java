@@ -29,6 +29,7 @@ public class Cliente extends Pessoa {
         aux += "Nome do cliente: " + getNome() + "\n" ;
         aux += "CPF do cliente: " + getCpf() + "\n" ;
         aux += "Valor atual da dívida: R$ " + getValorDaDivida() + "\n" ;
+        aux += "\n";
         return aux ;
 
     }

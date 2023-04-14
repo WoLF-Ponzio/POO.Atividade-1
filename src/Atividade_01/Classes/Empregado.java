@@ -1,6 +1,5 @@
 package src.Atividade_01.Classes;
 
-import java.lang.reflect.Method;
 import java.util.UUID;
 
 public abstract class Empregado extends Pessoa {
