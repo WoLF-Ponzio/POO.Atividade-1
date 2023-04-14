@@ -14,6 +14,7 @@ public class Menu {
         cadastrarEmpregado cadastroEmp = new cadastrarEmpregado();
         cadastrarCliente cadastroCli = new cadastrarCliente();
         listarCliente listaCli = new listarCliente();
+        pesquisar Pesquisar = new pesquisar();
 
         int menu = 0;
 
@@ -56,7 +57,7 @@ public class Menu {
 
                    case 3:
 
-                        // Pesquisar();
+                        Pesquisar.pesquisarPorCpf(listaPessoas);
 
                         break;
 
